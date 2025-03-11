@@ -49,7 +49,7 @@
             this.exitToolStripMenuItem});
             this.wokerToolStripMenuItem.Location = new System.Drawing.Point(0, 0);
             this.wokerToolStripMenuItem.Name = "wokerToolStripMenuItem";
-            this.wokerToolStripMenuItem.Size = new System.Drawing.Size(991, 28);
+            this.wokerToolStripMenuItem.Size = new System.Drawing.Size(1090, 28);
             this.wokerToolStripMenuItem.TabIndex = 0;
             this.wokerToolStripMenuItem.Text = "&Woker";
             // 
@@ -58,30 +58,35 @@
             this.wokerToolStripMenuItem1.Name = "wokerToolStripMenuItem1";
             this.wokerToolStripMenuItem1.Size = new System.Drawing.Size(71, 24);
             this.wokerToolStripMenuItem1.Text = "&Woker";
+            this.wokerToolStripMenuItem1.Click += new System.EventHandler(this.wokerToolStripMenuItem1_Click);
             // 
             // customerToolStripMenuItem
             // 
             this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
             this.customerToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
             this.customerToolStripMenuItem.Text = "&Customer";
+            this.customerToolStripMenuItem.Click += new System.EventHandler(this.customerToolStripMenuItem_Click);
             // 
             // jobDetailsToolStripMenuItem
             // 
             this.jobDetailsToolStripMenuItem.Name = "jobDetailsToolStripMenuItem";
             this.jobDetailsToolStripMenuItem.Size = new System.Drawing.Size(102, 24);
             this.jobDetailsToolStripMenuItem.Text = "&Job Details";
+            this.jobDetailsToolStripMenuItem.Click += new System.EventHandler(this.jobDetailsToolStripMenuItem_Click);
             // 
             // reportsToolStripMenuItem
             // 
             this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
             this.reportsToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
             this.reportsToolStripMenuItem.Text = "&Reports";
+            this.reportsToolStripMenuItem.Click += new System.EventHandler(this.reportsToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
             this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -97,7 +102,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(991, 462);
+            this.ClientSize = new System.Drawing.Size(1090, 462);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.wokerToolStripMenuItem);
             this.MainMenuStrip = this.wokerToolStripMenuItem;
