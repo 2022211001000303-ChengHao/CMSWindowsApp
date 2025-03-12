@@ -41,10 +41,11 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.btnPrevious = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.errorCustomerForm = new System.Windows.Forms.ErrorProvider(this.components);
+            this.lblPosition = new System.Windows.Forms.Label();
+            this.btnNew = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorCustomerForm)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,7 +92,7 @@
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.btnExit.Location = new System.Drawing.Point(709, 255);
+            this.btnExit.Location = new System.Drawing.Point(676, 255);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(94, 29);
             this.btnExit.TabIndex = 9;
@@ -102,27 +103,29 @@
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.btnCancel.Location = new System.Drawing.Point(544, 255);
+            this.btnCancel.Location = new System.Drawing.Point(559, 255);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(94, 29);
             this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnEdit
             // 
             this.btnEdit.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.btnEdit.Location = new System.Drawing.Point(393, 255);
+            this.btnEdit.Location = new System.Drawing.Point(441, 255);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(94, 29);
             this.btnEdit.TabIndex = 7;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.btnSave.Location = new System.Drawing.Point(243, 255);
+            this.btnSave.Location = new System.Drawing.Point(329, 255);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(94, 29);
             this.btnSave.TabIndex = 6;
@@ -162,46 +165,62 @@
             this.textBox4.Size = new System.Drawing.Size(155, 27);
             this.textBox4.TabIndex = 13;
             // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textBox5.Location = new System.Drawing.Point(356, 334);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(330, 27);
-            this.textBox5.TabIndex = 14;
-            // 
             // btnPrevious
             // 
             this.btnPrevious.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.btnPrevious.Location = new System.Drawing.Point(243, 336);
+            this.btnPrevious.Location = new System.Drawing.Point(329, 339);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(94, 29);
             this.btnPrevious.TabIndex = 15;
             this.btnPrevious.Text = "Previous";
             this.btnPrevious.UseVisualStyleBackColor = true;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
             // btnNext
             // 
             this.btnNext.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.btnNext.Location = new System.Drawing.Point(728, 336);
+            this.btnNext.Location = new System.Drawing.Point(559, 339);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(94, 29);
             this.btnNext.TabIndex = 16;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // errorCustomerForm
             // 
             this.errorCustomerForm.ContainerControl = this;
+            // 
+            // lblPosition
+            // 
+            this.lblPosition.AutoSize = true;
+            this.lblPosition.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.lblPosition.Location = new System.Drawing.Point(469, 343);
+            this.lblPosition.Name = "lblPosition";
+            this.lblPosition.Size = new System.Drawing.Size(53, 20);
+            this.lblPosition.TabIndex = 17;
+            this.lblPosition.Text = "label1";
+            // 
+            // btnNew
+            // 
+            this.btnNew.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.btnNew.Location = new System.Drawing.Point(211, 255);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(94, 29);
+            this.btnNew.TabIndex = 18;
+            this.btnNew.Text = "New";
+            this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // CustomerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1093, 450);
+            this.Controls.Add(this.btnNew);
+            this.Controls.Add(this.lblPosition);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrevious);
-            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -237,9 +256,10 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button btnPrevious;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.ErrorProvider errorCustomerForm;
+        private System.Windows.Forms.Label lblPosition;
+        private System.Windows.Forms.Button btnNew;
     }
 }

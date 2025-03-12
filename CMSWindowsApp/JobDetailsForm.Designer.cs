@@ -49,27 +49,26 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.textOilChanged = new System.Windows.Forms.TextBox();
-            this.textWeights = new System.Windows.Forms.TextBox();
-            this.textTires = new System.Windows.Forms.TextBox();
-            this.textBalancing = new System.Windows.Forms.TextBox();
-            this.textAligment = new System.Windows.Forms.TextBox();
-            this.textTuning = new System.Windows.Forms.TextBox();
-            this.textKMs = new System.Windows.Forms.TextBox();
-            this.textWorkerId = new System.Windows.Forms.TextBox();
-            this.textCarNo = new System.Windows.Forms.TextBox();
-            this.textOilFilter = new System.Windows.Forms.TextBox();
-            this.textGearOil = new System.Windows.Forms.TextBox();
-            this.textGearOilQty = new System.Windows.Forms.TextBox();
-            this.textPoint = new System.Windows.Forms.TextBox();
-            this.textConderser = new System.Windows.Forms.TextBox();
-            this.textPlug = new System.Windows.Forms.TextBox();
-            this.textPlugQty = new System.Windows.Forms.TextBox();
-            this.textFuelFilter = new System.Windows.Forms.TextBox();
-            this.textAirFilter = new System.Windows.Forms.TextBox();
-            this.textRemark = new System.Windows.Forms.TextBox();
-            this.textOilQty = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.txtOilChanged = new System.Windows.Forms.TextBox();
+            this.txtWeights = new System.Windows.Forms.TextBox();
+            this.txtTires = new System.Windows.Forms.TextBox();
+            this.txtBalancing = new System.Windows.Forms.TextBox();
+            this.txtAlignment = new System.Windows.Forms.TextBox();
+            this.txtTuning = new System.Windows.Forms.TextBox();
+            this.txtKMs = new System.Windows.Forms.TextBox();
+            this.txtWorkerID = new System.Windows.Forms.TextBox();
+            this.txtCarNo = new System.Windows.Forms.TextBox();
+            this.txtOilFilter = new System.Windows.Forms.TextBox();
+            this.txtGearOil = new System.Windows.Forms.TextBox();
+            this.txtGearOilQty = new System.Windows.Forms.TextBox();
+            this.txtPoint = new System.Windows.Forms.TextBox();
+            this.txtCondenser = new System.Windows.Forms.TextBox();
+            this.txtPlug = new System.Windows.Forms.TextBox();
+            this.txtPlugQty = new System.Windows.Forms.TextBox();
+            this.txtFuelFilter = new System.Windows.Forms.TextBox();
+            this.txtAirFilter = new System.Windows.Forms.TextBox();
+            this.txtRemarks = new System.Windows.Forms.TextBox();
+            this.txtOilQty = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -82,6 +81,7 @@
             this.btnCancelAll = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.lblPosition = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -110,9 +110,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.label3.Location = new System.Drawing.Point(121, 106);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 20);
+            this.label3.Size = new System.Drawing.Size(78, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "WorkerId";
+            this.label3.Text = "WorkerID";
             // 
             // label4
             // 
@@ -140,9 +140,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.label6.Location = new System.Drawing.Point(121, 225);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 20);
+            this.label6.Size = new System.Drawing.Size(85, 20);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Aligment";
+            this.label6.Text = "Alignment";
             // 
             // label7
             // 
@@ -190,9 +190,9 @@
             this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.label11.Location = new System.Drawing.Point(542, 383);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(64, 20);
+            this.label11.Size = new System.Drawing.Size(71, 20);
             this.label11.TabIndex = 19;
-            this.label11.Text = "Remark";
+            this.label11.Text = "Remarks";
             // 
             // label12
             // 
@@ -240,9 +240,9 @@
             this.label16.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.label16.Location = new System.Drawing.Point(542, 189);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(85, 20);
+            this.label16.Size = new System.Drawing.Size(88, 20);
             this.label16.TabIndex = 14;
-            this.label16.Text = "Conderser";
+            this.label16.Text = "Condenser";
             // 
             // label17
             // 
@@ -294,173 +294,165 @@
             this.label21.TabIndex = 20;
             this.label21.Text = "OilQty";
             // 
-            // textOilChanged
+            // txtOilChanged
             // 
-            this.textOilChanged.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textOilChanged.Location = new System.Drawing.Point(235, 378);
-            this.textOilChanged.Name = "textOilChanged";
-            this.textOilChanged.Size = new System.Drawing.Size(189, 27);
-            this.textOilChanged.TabIndex = 21;
+            this.txtOilChanged.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.txtOilChanged.Location = new System.Drawing.Point(235, 378);
+            this.txtOilChanged.Name = "txtOilChanged";
+            this.txtOilChanged.Size = new System.Drawing.Size(189, 27);
+            this.txtOilChanged.TabIndex = 21;
             // 
-            // textWeights
+            // txtWeights
             // 
-            this.textWeights.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textWeights.Location = new System.Drawing.Point(235, 341);
-            this.textWeights.Name = "textWeights";
-            this.textWeights.Size = new System.Drawing.Size(189, 27);
-            this.textWeights.TabIndex = 22;
+            this.txtWeights.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.txtWeights.Location = new System.Drawing.Point(235, 341);
+            this.txtWeights.Name = "txtWeights";
+            this.txtWeights.Size = new System.Drawing.Size(189, 27);
+            this.txtWeights.TabIndex = 22;
             // 
-            // textTires
+            // txtTires
             // 
-            this.textTires.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textTires.Location = new System.Drawing.Point(235, 300);
-            this.textTires.Name = "textTires";
-            this.textTires.Size = new System.Drawing.Size(189, 27);
-            this.textTires.TabIndex = 23;
+            this.txtTires.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.txtTires.Location = new System.Drawing.Point(235, 300);
+            this.txtTires.Name = "txtTires";
+            this.txtTires.Size = new System.Drawing.Size(189, 27);
+            this.txtTires.TabIndex = 23;
             // 
-            // textBalancing
+            // txtBalancing
             // 
-            this.textBalancing.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textBalancing.Location = new System.Drawing.Point(235, 257);
-            this.textBalancing.Name = "textBalancing";
-            this.textBalancing.Size = new System.Drawing.Size(189, 27);
-            this.textBalancing.TabIndex = 24;
+            this.txtBalancing.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.txtBalancing.Location = new System.Drawing.Point(235, 257);
+            this.txtBalancing.Name = "txtBalancing";
+            this.txtBalancing.Size = new System.Drawing.Size(189, 27);
+            this.txtBalancing.TabIndex = 24;
             // 
-            // textAligment
+            // txtAlignment
             // 
-            this.textAligment.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textAligment.Location = new System.Drawing.Point(235, 218);
-            this.textAligment.Name = "textAligment";
-            this.textAligment.Size = new System.Drawing.Size(189, 27);
-            this.textAligment.TabIndex = 25;
+            this.txtAlignment.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.txtAlignment.Location = new System.Drawing.Point(235, 218);
+            this.txtAlignment.Name = "txtAlignment";
+            this.txtAlignment.Size = new System.Drawing.Size(189, 27);
+            this.txtAlignment.TabIndex = 25;
             // 
-            // textTuning
+            // txtTuning
             // 
-            this.textTuning.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textTuning.Location = new System.Drawing.Point(235, 182);
-            this.textTuning.Name = "textTuning";
-            this.textTuning.Size = new System.Drawing.Size(189, 27);
-            this.textTuning.TabIndex = 26;
+            this.txtTuning.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.txtTuning.Location = new System.Drawing.Point(235, 182);
+            this.txtTuning.Name = "txtTuning";
+            this.txtTuning.Size = new System.Drawing.Size(189, 27);
+            this.txtTuning.TabIndex = 26;
             // 
-            // textKMs
+            // txtKMs
             // 
-            this.textKMs.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textKMs.Location = new System.Drawing.Point(235, 142);
-            this.textKMs.Name = "textKMs";
-            this.textKMs.Size = new System.Drawing.Size(189, 27);
-            this.textKMs.TabIndex = 27;
+            this.txtKMs.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.txtKMs.Location = new System.Drawing.Point(235, 142);
+            this.txtKMs.Name = "txtKMs";
+            this.txtKMs.Size = new System.Drawing.Size(189, 27);
+            this.txtKMs.TabIndex = 27;
             // 
-            // textWorkerId
+            // txtWorkerID
             // 
-            this.textWorkerId.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textWorkerId.Location = new System.Drawing.Point(235, 99);
-            this.textWorkerId.Name = "textWorkerId";
-            this.textWorkerId.Size = new System.Drawing.Size(189, 27);
-            this.textWorkerId.TabIndex = 28;
+            this.txtWorkerID.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.txtWorkerID.Location = new System.Drawing.Point(235, 99);
+            this.txtWorkerID.Name = "txtWorkerID";
+            this.txtWorkerID.Size = new System.Drawing.Size(189, 27);
+            this.txtWorkerID.TabIndex = 28;
             // 
-            // textCarNo
+            // txtCarNo
             // 
-            this.textCarNo.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textCarNo.Location = new System.Drawing.Point(235, 22);
-            this.textCarNo.Name = "textCarNo";
-            this.textCarNo.Size = new System.Drawing.Size(189, 27);
-            this.textCarNo.TabIndex = 30;
+            this.txtCarNo.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.txtCarNo.Location = new System.Drawing.Point(235, 22);
+            this.txtCarNo.Name = "txtCarNo";
+            this.txtCarNo.Size = new System.Drawing.Size(189, 27);
+            this.txtCarNo.TabIndex = 30;
             // 
-            // textOilFilter
+            // txtOilFilter
             // 
-            this.textOilFilter.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textOilFilter.Location = new System.Drawing.Point(645, 25);
-            this.textOilFilter.Name = "textOilFilter";
-            this.textOilFilter.Size = new System.Drawing.Size(189, 27);
-            this.textOilFilter.TabIndex = 40;
+            this.txtOilFilter.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.txtOilFilter.Location = new System.Drawing.Point(645, 25);
+            this.txtOilFilter.Name = "txtOilFilter";
+            this.txtOilFilter.Size = new System.Drawing.Size(189, 27);
+            this.txtOilFilter.TabIndex = 40;
             // 
-            // textGearOil
+            // txtGearOil
             // 
-            this.textGearOil.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textGearOil.Location = new System.Drawing.Point(645, 65);
-            this.textGearOil.Name = "textGearOil";
-            this.textGearOil.Size = new System.Drawing.Size(189, 27);
-            this.textGearOil.TabIndex = 39;
+            this.txtGearOil.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.txtGearOil.Location = new System.Drawing.Point(645, 65);
+            this.txtGearOil.Name = "txtGearOil";
+            this.txtGearOil.Size = new System.Drawing.Size(189, 27);
+            this.txtGearOil.TabIndex = 39;
             // 
-            // textGearOilQty
+            // txtGearOilQty
             // 
-            this.textGearOilQty.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textGearOilQty.Location = new System.Drawing.Point(645, 102);
-            this.textGearOilQty.Name = "textGearOilQty";
-            this.textGearOilQty.Size = new System.Drawing.Size(189, 27);
-            this.textGearOilQty.TabIndex = 38;
+            this.txtGearOilQty.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.txtGearOilQty.Location = new System.Drawing.Point(645, 102);
+            this.txtGearOilQty.Name = "txtGearOilQty";
+            this.txtGearOilQty.Size = new System.Drawing.Size(189, 27);
+            this.txtGearOilQty.TabIndex = 38;
             // 
-            // textPoint
+            // txtPoint
             // 
-            this.textPoint.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textPoint.Location = new System.Drawing.Point(645, 145);
-            this.textPoint.Name = "textPoint";
-            this.textPoint.Size = new System.Drawing.Size(189, 27);
-            this.textPoint.TabIndex = 37;
+            this.txtPoint.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.txtPoint.Location = new System.Drawing.Point(645, 145);
+            this.txtPoint.Name = "txtPoint";
+            this.txtPoint.Size = new System.Drawing.Size(189, 27);
+            this.txtPoint.TabIndex = 37;
             // 
-            // textConderser
+            // txtCondenser
             // 
-            this.textConderser.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textConderser.Location = new System.Drawing.Point(645, 185);
-            this.textConderser.Name = "textConderser";
-            this.textConderser.Size = new System.Drawing.Size(189, 27);
-            this.textConderser.TabIndex = 36;
+            this.txtCondenser.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.txtCondenser.Location = new System.Drawing.Point(645, 185);
+            this.txtCondenser.Name = "txtCondenser";
+            this.txtCondenser.Size = new System.Drawing.Size(189, 27);
+            this.txtCondenser.TabIndex = 36;
             // 
-            // textPlug
+            // txtPlug
             // 
-            this.textPlug.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textPlug.Location = new System.Drawing.Point(645, 221);
-            this.textPlug.Name = "textPlug";
-            this.textPlug.Size = new System.Drawing.Size(189, 27);
-            this.textPlug.TabIndex = 35;
+            this.txtPlug.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.txtPlug.Location = new System.Drawing.Point(645, 221);
+            this.txtPlug.Name = "txtPlug";
+            this.txtPlug.Size = new System.Drawing.Size(189, 27);
+            this.txtPlug.TabIndex = 35;
             // 
-            // textPlugQty
+            // txtPlugQty
             // 
-            this.textPlugQty.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textPlugQty.Location = new System.Drawing.Point(645, 260);
-            this.textPlugQty.Name = "textPlugQty";
-            this.textPlugQty.Size = new System.Drawing.Size(189, 27);
-            this.textPlugQty.TabIndex = 34;
+            this.txtPlugQty.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.txtPlugQty.Location = new System.Drawing.Point(645, 260);
+            this.txtPlugQty.Name = "txtPlugQty";
+            this.txtPlugQty.Size = new System.Drawing.Size(189, 27);
+            this.txtPlugQty.TabIndex = 34;
             // 
-            // textFuelFilter
+            // txtFuelFilter
             // 
-            this.textFuelFilter.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textFuelFilter.Location = new System.Drawing.Point(645, 303);
-            this.textFuelFilter.Name = "textFuelFilter";
-            this.textFuelFilter.Size = new System.Drawing.Size(189, 27);
-            this.textFuelFilter.TabIndex = 33;
+            this.txtFuelFilter.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.txtFuelFilter.Location = new System.Drawing.Point(645, 303);
+            this.txtFuelFilter.Name = "txtFuelFilter";
+            this.txtFuelFilter.Size = new System.Drawing.Size(189, 27);
+            this.txtFuelFilter.TabIndex = 33;
             // 
-            // textAirFilter
+            // txtAirFilter
             // 
-            this.textAirFilter.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textAirFilter.Location = new System.Drawing.Point(645, 344);
-            this.textAirFilter.Name = "textAirFilter";
-            this.textAirFilter.Size = new System.Drawing.Size(189, 27);
-            this.textAirFilter.TabIndex = 32;
+            this.txtAirFilter.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.txtAirFilter.Location = new System.Drawing.Point(645, 344);
+            this.txtAirFilter.Name = "txtAirFilter";
+            this.txtAirFilter.Size = new System.Drawing.Size(189, 27);
+            this.txtAirFilter.TabIndex = 32;
             // 
-            // textRemark
+            // txtRemarks
             // 
-            this.textRemark.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textRemark.Location = new System.Drawing.Point(645, 381);
-            this.textRemark.Name = "textRemark";
-            this.textRemark.Size = new System.Drawing.Size(189, 27);
-            this.textRemark.TabIndex = 31;
+            this.txtRemarks.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.txtRemarks.Location = new System.Drawing.Point(645, 381);
+            this.txtRemarks.Name = "txtRemarks";
+            this.txtRemarks.Size = new System.Drawing.Size(189, 27);
+            this.txtRemarks.TabIndex = 31;
             // 
-            // textOilQty
+            // txtOilQty
             // 
-            this.textOilQty.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textOilQty.Location = new System.Drawing.Point(235, 430);
-            this.textOilQty.Name = "textOilQty";
-            this.textOilQty.Size = new System.Drawing.Size(189, 27);
-            this.textOilQty.TabIndex = 41;
-            // 
-            // textBox22
-            // 
-            this.textBox22.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.textBox22.Location = new System.Drawing.Point(409, 487);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(222, 27);
-            this.textBox22.TabIndex = 42;
+            this.txtOilQty.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.txtOilQty.Location = new System.Drawing.Point(235, 430);
+            this.txtOilQty.Name = "txtOilQty";
+            this.txtOilQty.Size = new System.Drawing.Size(189, 27);
+            this.txtOilQty.TabIndex = 41;
             // 
             // dateTimePicker1
             // 
@@ -472,42 +464,46 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.button1.Location = new System.Drawing.Point(344, 487);
+            this.button1.Location = new System.Drawing.Point(401, 487);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(44, 29);
             this.button1.TabIndex = 44;
             this.button1.Text = "<";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.button2.Location = new System.Drawing.Point(283, 487);
+            this.button2.Location = new System.Drawing.Point(337, 487);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(44, 29);
             this.button2.TabIndex = 45;
             this.button2.Text = "<<";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.button3.Location = new System.Drawing.Point(725, 487);
+            this.button3.Location = new System.Drawing.Point(637, 487);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(44, 29);
             this.button3.TabIndex = 46;
             this.button3.Text = ">>";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.button4.Location = new System.Drawing.Point(659, 487);
+            this.button4.Location = new System.Drawing.Point(561, 487);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(44, 29);
             this.button4.TabIndex = 47;
             this.button4.Text = ">";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnLoad
             // 
@@ -518,6 +514,7 @@
             this.btnLoad.TabIndex = 48;
             this.btnLoad.Text = "Load";
             this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // btnAdd
             // 
@@ -581,11 +578,22 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // lblPosition
+            // 
+            this.lblPosition.AutoSize = true;
+            this.lblPosition.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.lblPosition.Location = new System.Drawing.Point(471, 491);
+            this.lblPosition.Name = "lblPosition";
+            this.lblPosition.Size = new System.Drawing.Size(41, 20);
+            this.lblPosition.TabIndex = 55;
+            this.lblPosition.Text = "0 / 0";
+            // 
             // JobDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1127, 585);
+            this.Controls.Add(this.lblPosition);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnCancelAll);
@@ -598,27 +606,26 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox22);
-            this.Controls.Add(this.textOilQty);
-            this.Controls.Add(this.textOilFilter);
-            this.Controls.Add(this.textGearOil);
-            this.Controls.Add(this.textGearOilQty);
-            this.Controls.Add(this.textPoint);
-            this.Controls.Add(this.textConderser);
-            this.Controls.Add(this.textPlug);
-            this.Controls.Add(this.textPlugQty);
-            this.Controls.Add(this.textFuelFilter);
-            this.Controls.Add(this.textAirFilter);
-            this.Controls.Add(this.textRemark);
-            this.Controls.Add(this.textCarNo);
-            this.Controls.Add(this.textWorkerId);
-            this.Controls.Add(this.textKMs);
-            this.Controls.Add(this.textTuning);
-            this.Controls.Add(this.textAligment);
-            this.Controls.Add(this.textBalancing);
-            this.Controls.Add(this.textTires);
-            this.Controls.Add(this.textWeights);
-            this.Controls.Add(this.textOilChanged);
+            this.Controls.Add(this.txtOilQty);
+            this.Controls.Add(this.txtOilFilter);
+            this.Controls.Add(this.txtGearOil);
+            this.Controls.Add(this.txtGearOilQty);
+            this.Controls.Add(this.txtPoint);
+            this.Controls.Add(this.txtCondenser);
+            this.Controls.Add(this.txtPlug);
+            this.Controls.Add(this.txtPlugQty);
+            this.Controls.Add(this.txtFuelFilter);
+            this.Controls.Add(this.txtAirFilter);
+            this.Controls.Add(this.txtRemarks);
+            this.Controls.Add(this.txtCarNo);
+            this.Controls.Add(this.txtWorkerID);
+            this.Controls.Add(this.txtKMs);
+            this.Controls.Add(this.txtTuning);
+            this.Controls.Add(this.txtAlignment);
+            this.Controls.Add(this.txtBalancing);
+            this.Controls.Add(this.txtTires);
+            this.Controls.Add(this.txtWeights);
+            this.Controls.Add(this.txtOilChanged);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
@@ -670,27 +677,26 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textOilChanged;
-        private System.Windows.Forms.TextBox textWeights;
-        private System.Windows.Forms.TextBox textTires;
-        private System.Windows.Forms.TextBox textBalancing;
-        private System.Windows.Forms.TextBox textAligment;
-        private System.Windows.Forms.TextBox textTuning;
-        private System.Windows.Forms.TextBox textKMs;
-        private System.Windows.Forms.TextBox textWorkerId;
-        private System.Windows.Forms.TextBox textCarNo;
-        private System.Windows.Forms.TextBox textOilFilter;
-        private System.Windows.Forms.TextBox textGearOil;
-        private System.Windows.Forms.TextBox textGearOilQty;
-        private System.Windows.Forms.TextBox textPoint;
-        private System.Windows.Forms.TextBox textConderser;
-        private System.Windows.Forms.TextBox textPlug;
-        private System.Windows.Forms.TextBox textPlugQty;
-        private System.Windows.Forms.TextBox textFuelFilter;
-        private System.Windows.Forms.TextBox textAirFilter;
-        private System.Windows.Forms.TextBox textRemark;
-        private System.Windows.Forms.TextBox textOilQty;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox txtOilChanged;
+        private System.Windows.Forms.TextBox txtWeights;
+        private System.Windows.Forms.TextBox txtTires;
+        private System.Windows.Forms.TextBox txtBalancing;
+        private System.Windows.Forms.TextBox txtAlignment;
+        private System.Windows.Forms.TextBox txtTuning;
+        private System.Windows.Forms.TextBox txtKMs;
+        private System.Windows.Forms.TextBox txtWorkerID;
+        private System.Windows.Forms.TextBox txtCarNo;
+        private System.Windows.Forms.TextBox txtOilFilter;
+        private System.Windows.Forms.TextBox txtGearOil;
+        private System.Windows.Forms.TextBox txtGearOilQty;
+        private System.Windows.Forms.TextBox txtPoint;
+        private System.Windows.Forms.TextBox txtCondenser;
+        private System.Windows.Forms.TextBox txtPlug;
+        private System.Windows.Forms.TextBox txtPlugQty;
+        private System.Windows.Forms.TextBox txtFuelFilter;
+        private System.Windows.Forms.TextBox txtAirFilter;
+        private System.Windows.Forms.TextBox txtRemarks;
+        private System.Windows.Forms.TextBox txtOilQty;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
@@ -703,5 +709,6 @@
         private System.Windows.Forms.Button btnCancelAll;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label lblPosition;
     }
 }
