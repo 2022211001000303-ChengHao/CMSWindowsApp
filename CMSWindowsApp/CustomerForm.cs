@@ -14,9 +14,9 @@ namespace CMSWindowsApp
     public partial class CustomerForm: Form
     {
         private SqlConnection conn;
-        SqlDataAdapter adapter;
-        DataSet customerDataset;
-        BindingSource bindingSource;
+        private SqlDataAdapter adapter;
+        private DataSet customerDataset;
+        private BindingSource bindingSource;
         public CustomerForm()
         {
             InitializeComponent();
@@ -94,7 +94,7 @@ namespace CMSWindowsApp
                 {
                     bindingSource.EndEdit();
                     adapter.Update(customerDataset, "tblCustomer");
-                    MessageBox.Show("Record saved successfuly");
+                    MessageBox.Show("Record saved successfully!");
                 }
                 catch (Exception ex)
                 {

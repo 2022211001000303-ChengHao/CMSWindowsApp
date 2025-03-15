@@ -69,7 +69,6 @@
             this.txtAirFilter = new System.Windows.Forms.TextBox();
             this.txtRemarks = new System.Windows.Forms.TextBox();
             this.txtOilQty = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -82,6 +81,7 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.lblPosition = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -454,13 +454,6 @@
             this.txtOilQty.Size = new System.Drawing.Size(189, 27);
             this.txtOilQty.TabIndex = 41;
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(235, 65);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(189, 25);
-            this.dateTimePicker1.TabIndex = 43;
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
@@ -525,6 +518,7 @@
             this.btnAdd.TabIndex = 49;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
@@ -535,6 +529,7 @@
             this.btnDelete.TabIndex = 50;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnCancel
             // 
@@ -545,6 +540,7 @@
             this.btnCancel.TabIndex = 51;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnCancelAll
             // 
@@ -555,6 +551,7 @@
             this.btnCancelAll.TabIndex = 52;
             this.btnCancelAll.Text = "CancelAll";
             this.btnCancelAll.UseVisualStyleBackColor = true;
+            this.btnCancelAll.Click += new System.EventHandler(this.btnCancelAll_Click);
             // 
             // btnUpdate
             // 
@@ -588,11 +585,19 @@
             this.lblPosition.TabIndex = 55;
             this.lblPosition.Text = "0 / 0";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(235, 59);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(189, 25);
+            this.dateTimePicker1.TabIndex = 56;
+            // 
             // JobDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1127, 585);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.lblPosition);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnUpdate);
@@ -605,7 +610,6 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.txtOilQty);
             this.Controls.Add(this.txtOilFilter);
             this.Controls.Add(this.txtGearOil);
@@ -697,7 +701,6 @@
         private System.Windows.Forms.TextBox txtAirFilter;
         private System.Windows.Forms.TextBox txtRemarks;
         private System.Windows.Forms.TextBox txtOilQty;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -710,5 +713,6 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label lblPosition;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

@@ -17,6 +17,7 @@ namespace CMSWindowsApp
         private SqlDataAdapter adapter;
         private DataSet jobDetailsDataset;
         private BindingSource bindingSource;
+        
 
         public JobDetailsForm()
         {
@@ -27,7 +28,7 @@ namespace CMSWindowsApp
         {
             try
             {
-                if (txtCarNo.Text.Length < 6)
+                if (txtCarNo.Text.Length < 5)
                 {
                     MessageBox.Show("Please Specify a valid number");
                     txtCarNo.Focus();
@@ -47,10 +48,15 @@ namespace CMSWindowsApp
                     dateTimePicker1.Focus();
                     return;
                 }
+
+                bindingSource.EndEdit();
+                adapter.Update(jobDetailsDataset, "tblJobDetails");
+                MessageBox.Show("Record Updated Successfully!");
+
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 
@@ -63,7 +69,7 @@ namespace CMSWindowsApp
         {
             conn = new SqlConnection("Data Source=localhost;Initial Catalog=CMSDB;Integrated Security=True;TrustServerCertificate=True");
             adapter = new SqlDataAdapter("Select * from tblJobDetails", conn);
-            
+
             SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(adapter);
             jobDetailsDataset = new DataSet();
             adapter.Fill(jobDetailsDataset, "tblJobDetails"); 
@@ -78,6 +84,8 @@ namespace CMSWindowsApp
                     txt.DataBindings.Add("Text", bindingSource, columnName);
                 }
             }
+            dateTimePicker1.DataBindings.Add("Value", bindingSource, "JobDate");
+
             UpdatePositionlabel();
         }
 
@@ -120,6 +128,46 @@ namespace CMSWindowsApp
         private void button3_Click(object sender, EventArgs e)
         {
             bindingSource.MoveLast();
+            UpdatePositionlabel();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            if (bindingSource == null)
+                bindingSource = new BindingSource();
+            
+
+            if (bindingSource.DataSource == null)
+            {
+                MessageBox.Show("Data source is empty. Load data first.");
+                return;
+            }
+
+            bindingSource.DataSource = jobDetailsDataset.Tables["tblJobDetails"];
+            bindingSource.AddNew();
+            UpdatePositionlabel();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (bindingSource.Count > 0)
+            {
+                bindingSource.RemoveCurrent();
+                adapter.Update(jobDetailsDataset, "tblJobDetails");
+                MessageBox.Show("Record Deleted Successefully!");
+                UpdatePositionlabel();
+            }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            bindingSource.CancelEdit();
+            UpdatePositionlabel();
+        }
+
+        private void btnCancelAll_Click(object sender, EventArgs e)
+        {
+            jobDetailsDataset.RejectChanges();
             UpdatePositionlabel();
         }
     }
